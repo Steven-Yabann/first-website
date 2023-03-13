@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(43, 40, 82);
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;;
+    color: rgb(212, 212, 212);
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    background-size: cover;
+    background-position: center;
+
+    
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 80px;
+    width: 140px;
+    color: inherit;
+    position: relative; left: -10%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+nav ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(42, 115, 175);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+nav ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 30px;
+}
+nav ul li i{
+    font-size: 25px;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 20px;
+}
+.header-text h2{
+    font-size: 70px;
+}
+/* about */
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#about h2{
+    font-size: 40px;
+
+}
+#about-me{
+    position: relative; left: -20%;
+    flex-basis: 60%;
+    font-size: 20px;
+}
+/* contact */
+#contact{
+    background-color: rgb(56, 19, 90);
+    
+    justify-content: space-between;
+    
+}
+#contact h2{
+    position: relative; left: 10%;
+    font-size: 40px;
+
+}
+#contact ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 30px;
+    position: relative; left: -8%;
+}
+
+ 
